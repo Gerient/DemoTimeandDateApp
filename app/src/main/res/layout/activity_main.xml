@@ -49,16 +49,14 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/textview" />
+                android:layout_height="wrap_content" />
 
-            <ToggleButton
-                android:id="@+id/toggleButtonReset"
+            <Button
+                android:id="@+id/buttonReset"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:checked="true"
-                android:textOff="@string/no_reset"
-                android:textOn="@string/reset" />
+                android:text="@string/reset" />
+
         </LinearLayout>
     </ScrollView>
 

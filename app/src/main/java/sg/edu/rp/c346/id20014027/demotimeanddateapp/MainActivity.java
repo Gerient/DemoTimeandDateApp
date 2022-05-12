@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnDisplayDate;
     Button btnDisplayTime;
     TextView tvDisplay;
-    ToggleButton btnReset;
+    Button btnReset;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnDisplayDate = findViewById(R.id.buttonDisplayDate);
         btnDisplayTime = findViewById(R.id.buttonDisplayTime);
         tvDisplay = findViewById(R.id.textView);
-        btnReset = findViewById(R.id.toggleButtonReset);
+        btnReset = findViewById(R.id.buttonReset);
 
         btnDisplayTime.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,9 +63,9 @@ public class MainActivity extends AppCompatActivity {
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(btnReset.isChecked()){
-                    dp.updateDate(2020,01,01);
-                }
+                dp.updateDate(2020, 1, 1);
+                tp.setHour(12);
+                tp.setMinute(00);
             }
         });
 
